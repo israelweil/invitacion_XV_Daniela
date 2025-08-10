@@ -1,0 +1,33 @@
+---
+import "../styles/main.css";
+---
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XV Años - Daniela</title>
+</head>
+<body>
+  <main class="invitacion">
+    <section class="intro">
+      <h1>Mis XV Años</h1>
+      <h2>Daniela</h2>
+      <p>Con gran alegría, la familia de Daniela tiene el honor de invitarle a la celebración de sus XV Años.</p>
+      <p><strong>Fecha:</strong> 1 de septiembre de 2025, 17:00 hrs</p>
+      <a href="https://maps.app.goo.gl/KsdpcVk9D9J8zbhZA" target="_blank" class="btn">Ver ubicación</a>
+    </section>
+    <section class="confirmacion">
+      <h3>Confirmar asistencia</h3>
+      <form action="https://script.google.com/macros/s/AKfycbyZZ_UABWJFWXivxTSGgKU6fCeO7ilx28GD94BIYYjNCL5hDZEfMQ_yK6GffPgv7ZCu/exec" method="post">
+        <input type="text" name="entry.nombre" placeholder="Nombre de la familia" required />
+        <input type="number" name="entry.personas" placeholder="Número de personas" required />
+        <textarea name="entry.mensaje" placeholder="Mensaje (opcional)"></textarea>
+        <button type="submit">Confirmar</button>
+      </form>
+    </section>
+    <audio autoplay loop>
+      <source src="/vals.mp3" type="audio/mpeg" />
+    </audio>
+  </main>
+</body>
+</html>
